@@ -1,93 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dalel Trade - Smart Trading Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinTech Solutions</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f4faff;
-      color: #333;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #1b2a41;
     }
     .hero {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: #fff;
-      padding: 100px 0;
+      min-height: 100vh;
+      background: linear-gradient(to right, #03a9f4, #81d4fa);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
       text-align: center;
     }
     .hero h1 {
-      font-size: 48px;
+      font-size: 4rem;
       font-weight: 700;
     }
     .hero p {
-      font-size: 20px;
-      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 60px 20px;
     }
     .section-title {
-      font-weight: 700;
-      color: #0072ff;
-      margin-bottom: 25px;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
     }
-    .services li {
-      margin-bottom: 10px;
-      font-size: 18px;
+    .card-custom {
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      transition: transform 0.3s;
     }
-    .contact-box {
-      background-color: #e0f2ff;
-      padding: 30px;
-      border-radius: 10px;
+    .card-custom:hover {
+      transform: translateY(-5px);
     }
     footer {
-      background: #001f3f;
-      color: #fff;
-      padding: 30px 10px;
+      background-color: #0d47a1;
+      color: white;
+      padding: 30px 0;
+    }
+    .footer-text {
       text-align: center;
-      margin-top: 50px;
+    }
+    .btn-main {
+      background-color: #0288d1;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .btn-main:hover {
+      background-color: #01579b;
     }
   </style>
 </head>
 <body>
 
-  <header class="hero">
+  <section class="hero">
     <div class="container">
-      <h1>Dalel Trade</h1>
-      <p>Smart & Modern Trading Technologies for Professionals</p>
+      <h1>FinTech Solutions</h1>
+      <p>Automating Trading. Building Systems. Securing Your Financial Future.</p>
+      <a href="#services" class="btn btn-main mt-4">Explore Services</a>
     </div>
-  </header>
-
-  <section class="container py-5">
-    <h2 class="section-title">About Us</h2>
-    <p>
-      We specialize in developing innovative financial technology solutions for traders and institutions. Our mission is to provide intelligent tools and customized systems to help improve trading performance, automate strategies, and manage accounts securely.
-    </p>
   </section>
 
-  <section class="container pb-5">
-    <h2 class="section-title">Our Services</h2>
-    <ul class="services">
-      <li>Automated trading bot development based on custom strategies</li>
-      <li>Advanced dashboard and analytics systems</li>
-      <li>Real-time alert and signal systems</li>
-      <li>Integration with platforms: MT4 / MT5 / Binance API / and more</li>
-      <li>Custom indicator development and market scanners</li>
-      <li>Secure trading account management solutions</li>
-      <li>Technical consultancy for trading teams and fintech startups</li>
-    </ul>
+  <section id="services" class="section">
+    <h2 class="section-title">Our Expertise</h2>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-custom p-4">
+            <h5>Trading Bots</h5>
+            <p>We develop smart trading bots tailored to your strategies and platforms (MT4/MT5).</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom p-4">
+            <h5>Account Management</h5>
+            <p>We handle professional portfolio growth, with risk management and real-time tracking.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom p-4">
+            <h5>Custom FinTech Tools</h5>
+            <p>From dashboards to automation tools, we build secure and scalable solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="container contact-box mb-5">
-    <h2 class="section-title">Contact</h2>
-    <p>If you're interested in collaborating or getting a quote, please reach out:</p>
-    <p class="fw-bold">📧 DalelTrade@gmail.com</p>
+  <section class="section bg-light">
+    <h2 class="section-title">Why Choose FinTech?</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>✔ Tailored solutions for every trader</li>
+            <li>✔ Secure and encrypted backend</li>
+            <li>✔ Fast delivery with modern UI/UX</li>
+            <li>✔ Integration with top brokers & APIs</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" class="img-fluid rounded" alt="fintech">
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Dalel Trade. All rights reserved. Designed for modern financial technology.
+    <div class="container">
+      <p class="footer-text">Contact us at: <strong>DalelTrade@gmail.com</strong> | &copy; 2025 FinTech</p>
+    </div>
   </footer>
+
+  <script>
+    $(document).ready(function() {
+      $('.btn-main').click(function(e) {
+        e.preventDefault();
+        const target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top - 50 }, 600);
+      });
+    });
+  </script>
 
 </body>
 </html>
